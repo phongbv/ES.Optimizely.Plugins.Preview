@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
-    <id>ES.Optimizely.Plugins.Preview</id>
-    <version>1.0.0</version>
+    <id>ES.Optimizely.Plugins.AdvancePreview</id>
+    <version>1.0.1</version>
     <authors>ES Ha Noi</authors>
     <readme>README.md</readme>
     <license type="file">LICENSE</license>
-    <projectUrl>https://github.com/phongbv/ES.Optimizely.Plugins.Preview</projectUrl>
+    <projectUrl>https://github.com/phongbv/ES.Optimizely.Plugins.AdvancePreview</projectUrl>
     <description>This package allow editors open preview page in new tab instead of embedded frame</description>
     <tags>preview</tags>
     <dependencies>
       <group targetFramework="net8.0">
-		<dependency id="EPiServer.CMS.UI.Core" version="[12.0.2, )" exclude="Build,Analyzers" />
+		<dependency id="EPiServer.CMS.UI.Core" version="[12.24.0, )" exclude="Build,Analyzers" />
       </group>
     </dependencies>
     <contentFiles>
       <files include="any/any/modules/_protected/PreviewButton/PreviewButton.zip" buildAction="None" copyToOutput="true" />
     </contentFiles>
-    <repository type="git" url="https://github.com/phongbv/ES.Optimizely.Plugins.Preview.git" branch="master" />
+    <repository type="git" url="https://github.com/phongbv/ES.Optimizely.Plugins.AdvancePreview.git" branch="master" />
     <releaseNotes>
       - Add project
     </releaseNotes>
@@ -25,7 +25,7 @@
   <files>
     <file src="ClientResources\PreviewButton.zip" target="contentFiles\any\any\modules\_protected\PreviewButton\PreviewButton.zip" />
     <file src="bin\Release\net8.0\*.dll" target="lib\net8.0" />
-    <file src="ES.Optimizely.Plugins.Preview.targets" target="build\net8.0\" />
+    <file src="ES.Optimizely.Plugins.AdvancePreview.targets" target="build\net8.0\" />
     <file src=".\LICENSE" target="LICENSE" />
     <file src=".\README.md" target="README.md" />
   </files>

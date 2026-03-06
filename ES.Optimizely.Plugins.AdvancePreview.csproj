@@ -4,16 +4,12 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <PackageId>ES.Optimizely.Plugins.Preview</PackageId>
+        <PackageId>ES.Optimizely.Plugins.AdvancePreview</PackageId>
         <Authors>ES HN</Authors>
         <LangVersion>11</LangVersion>
         <Company>ES HN</Company>
-        <NuspecFile>ES.Optimizely.Plugins.Preview.nuspec</NuspecFile>
+        <NuspecFile>ES.Optimizely.Plugins.AdvancePreview.nuspec</NuspecFile>
     </PropertyGroup>
-
-    <ItemGroup>
-      <PackageReference Include="EPiServer.CMS.UI.Core" Version="12.0.2" />
-    </ItemGroup>
        
     <ItemGroup>
       <None Update="ClientResources\preview-button.zip">
@@ -35,18 +31,14 @@
     <ItemGroup>
       <Folder Include="ClientResources\" />
     </ItemGroup>
+       
+    <ItemGroup>
+      <PackageReference Include="EPiServer.CMS.UI.Core" Version="12.24.0" />
+    </ItemGroup>
     
     <Target Name="ZipPreviewButton" BeforeTargets="Build">
-        <ZipDirectory
-            SourceDirectory="$(MSBuildProjectDirectory)\ClientResources\PreviewButton"
-            DestinationFile="$(MSBuildProjectDirectory)\ClientResources\PreviewButton.zip"
-            Overwrite="true"
-        />
-        <Copy
-            SourceFiles="$(MSBuildProjectDirectory)\ClientResources\PreviewButton.zip"
-            DestinationFolder="$(MSBuildProjectDirectory)\modules\_protected"
-            SkipUnchangedFiles="true"
-        />
+        <ZipDirectory SourceDirectory="$(MSBuildProjectDirectory)\ClientResources\PreviewButton" DestinationFile="$(MSBuildProjectDirectory)\ClientResources\PreviewButton.zip" Overwrite="true" />
+        <Copy SourceFiles="$(MSBuildProjectDirectory)\ClientResources\PreviewButton.zip" DestinationFolder="$(MSBuildProjectDirectory)\modules\_protected" SkipUnchangedFiles="true" />
     </Target>
 
 </Project>
