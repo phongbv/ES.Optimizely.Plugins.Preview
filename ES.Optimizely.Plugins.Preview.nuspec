@@ -6,9 +6,9 @@
     <authors>ES Ha Noi</authors>
     <readme>README.md</readme>
     <license type="file">LICENSE</license>
-    <projectUrl>https://github.com/eshanoi/ES.Optimizely.Plugins.Preview</projectUrl>
-    <description>This package supports user choose focal point of an image then cropping bases on it</description>
-    <tags>Focal</tags>
+    <projectUrl>https://github.com/phongbv/ES.Optimizely.Plugins.Preview</projectUrl>
+    <description>This package allow editors open preview page in new tab instead of embedded frame</description>
+    <tags>preview</tags>
     <dependencies>
       <group targetFramework="net8.0">
 		<dependency id="EPiServer.CMS.UI.Core" version="[12.0.2, )" exclude="Build,Analyzers" />
@@ -17,9 +17,9 @@
     <contentFiles>
       <files include="any/any/modules/_protected/PreviewButton/PreviewButton.zip" buildAction="None" copyToOutput="true" />
     </contentFiles>
-    <repository type="git" url="https://github.com/eshanoi/ES.Optimizely.Plugins.Preview.git" branch="master" />
+    <repository type="git" url="https://github.com/phongbv/ES.Optimizely.Plugins.Preview.git" branch="master" />
     <releaseNotes>
-      - Upgrade to .net 8
+      - Add project
     </releaseNotes>
   </metadata>
   <files>
