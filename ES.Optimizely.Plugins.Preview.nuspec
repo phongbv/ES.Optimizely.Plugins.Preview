@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>ES.Optimizely.Plugins.Preview</id>
+    <version>1.0.0</version>
+    <authors>ES Ha Noi</authors>
+    <readme>README.md</readme>
+    <license type="file">LICENSE</license>
+    <projectUrl>https://github.com/eshanoi/ES.Optimizely.Plugins.Preview</projectUrl>
+    <description>This package supports user choose focal point of an image then cropping bases on it</description>
+    <tags>Focal</tags>
+    <dependencies>
+      <group targetFramework="net8.0">
+		<dependency id="EPiServer.CMS.UI.Core" version="[12.0.2, )" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/any/modules/_protected/PreviewButton/PreviewButton.zip" buildAction="None" copyToOutput="true" />
+    </contentFiles>
+    <repository type="git" url="https://github.com/eshanoi/ES.Optimizely.Plugins.Preview.git" branch="master" />
+    <releaseNotes>
+      - Upgrade to .net 8
+    </releaseNotes>
+  </metadata>
+  <files>
+    <file src="ClientResources\PreviewButton.zip" target="contentFiles\any\any\modules\_protected\PreviewButton\PreviewButton.zip" />
+    <file src="bin\Release\net8.0\*.dll" target="lib\net8.0" />
+    <file src="ES.Optimizely.Plugins.Preview.targets" target="build\net8.0\" />
+    <file src=".\LICENSE" target="LICENSE" />
+    <file src=".\README.md" target="README.md" />
+  </files>
+</package>
